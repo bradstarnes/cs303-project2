@@ -11,3 +11,24 @@ be ordered by tree depth. To find the position for a letter in the tree, scan th
 left for a dot and branch right for a dash. Encode a message by replacing each letter by its code
 symbol. Then decode the message using Morse code tree. Make sure you use a delimiter symbol
 between coded letters. 
+
+
+Technical Requirements
+• (Weight: 40%) Write a function that builds the morse tree shown in the figure above. The
+information of the tree (the letters and the codes) is stored in a file. You can find the file here:
+https://www.dropbox.com/s/3cj8yb8gcdsrefg/morse.txt?dl=0 (Notice that the file hasn’t been
+laid out in convenient order for building the tree).
+• (Weight: 30%) Your system should be able to decode a message using the morse tree that you
+built. For example, decoding - -- results in “dg”. The problem text briefly explains how you
+can do that. Notice that between the symbols (dots and dashes) is a space. The space is a
+delimiter that separates the codes for letters.
+• (Weight: 30%) Your system should also encode a message. For example, encoding “ac” results in
+- --.
+• You may use a binary search tree or a map to store the codes for letters.
+Facts and Assumptions
+• You may assume that the character delimiters are simply spaces.
+• You may assume the string has one word only.
+• You are welcome to use the source code on Blackboard (e.g. Binary_Tree,
+Binary_Search_Tree).
+• You may just call the decode and encode functions in the main function. There is no need for
+getting input from the user or a menu-based system. 
